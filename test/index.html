@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PresentaBlockStarter</title>
+    <script src="../dist/presenta-block-starter.min.js"></script>
+</head>
+<body>
+
+    <div id="wrapper"></div>
+
+    <script>
+        var block = {
+            type: 'starter',
+            name: 'John'
+        }
+        new PresentaBlockStarter(document.querySelector('#wrapper'), block)
+    </script>
+</body>
+</html>
