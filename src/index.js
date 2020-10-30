@@ -1,6 +1,8 @@
 import css from './style.css'
 
-const block = function (el, config, rootElement, projectConfig) {
+const block = function (el, config) {
+  console.log(css)
+
   const child = document.createElement('div')
   child.classList.add(css.starter)
 
