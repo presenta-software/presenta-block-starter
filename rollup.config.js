@@ -5,8 +5,7 @@ import commonjs from '@rollup/plugin-commonjs'
 import postcss from 'rollup-plugin-postcss'
 import autoprefixer from 'autoprefixer'
 import cssnano from 'cssnano'
-
-const terser = require('rollup-plugin-terser').terser
+import { terser } from 'rollup-plugin-terser'
 
 export default {
   input: 'src/index.js',

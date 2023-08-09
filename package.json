@@ -2,9 +2,10 @@
   "name": "@presenta/block-starter",
   "version": "1.0.1",
   "description": "",
+  "type": "module",
   "main": "src/index.js",
   "unpkg": "dist/presenta-block-starter.min.js",
-  "module": "dist/presenta-block-starter.min.js",
+  "module": "src/index.js",
   "scripts": {
     "start": "rollup -c --watch",
     "bump": "npm run build && git add -u && git commit -m \"bump release\" && npm version patch && git push && npm publish",
@@ -22,7 +23,7 @@
     "autoprefixer": "^10.4.14",
     "cssnano": "^5.1.15",
     "node-sass": "^7.0.3",
-    "rollup": "^2.79.1",
+    "rollup": "^3.28.0",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-terser": "^7.0.2",
     "standard": "^17.1.0"
